@@ -9,3 +9,24 @@ var FlappyNyan = function(state, x, y){
     }
 }
 Kiwi.extend(FlappyNyan,Kiwi.GameObjects.Sprite);
+FlappyNyan.prototype.spawnBoxes = function(one, two, three, four, five){
+ 
+    if(one){    
+        this.state.streamerGroup.addChild(new MovingBox(this.state, this.x , this.y + 05,  'yellowBox'));
+        }
+        if(two){ 
+            this.state.streamerGroup.addChild(new MovingBox(this.state, this.x , this.y+ 15, 'orangeBox'));
+        }
+     
+        if(three){ 
+            this.state.streamerGroup.addChild(new MovingBox(this.state, this.x , this.y + 25,  'greenBox'));
+        }
+     
+        if(four){ 
+            this.state.streamerGroup.addChild(new MovingBox(this.state, this.x, this.y + 35,  'pinkBox'));
+        }
+     
+        if(five){ 
+            this.state.streamerGroup.addChild(new MovingBox(this.state, this.x, this.y + 45, 'blueBox'));
+        }
+    }

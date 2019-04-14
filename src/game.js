@@ -10,9 +10,10 @@
 //Initialise the Kiwi Game. 
 
 var gameOptions = {
-	renderer: Kiwi.RENDERER_WEBGL, 
-	width: 800,
-	height: 600
+    renderer: Kiwi.RENDERER_WEBGL, 
+    plugins:['LeapMotion'],
+    width: 800,
+    height: 600
 }
 
 var game = new Kiwi.Game('content', 'GettingStarted', null, gameOptions);

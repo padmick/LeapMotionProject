@@ -1,17 +1,10 @@
-Name: GettingStarted 
+Name: Leap motion for college project. 
 Version: 1.0
-Type: Game
-Author: You
-Website: Link to your website
-
-----------------------------------------------------------------------------------------
-Versions
-----------------------------------------------------------------------------------------
-
-1.0 - Initial Game. 
-	
+Type: Game using leap motion and kiwi.js
+Author: Padraic Wade G00314523
 
 ----------------------------------------------------------------------------------------
 Description:
 ----------------------------------------------------------------------------------------
-Thanks for using the Kiwi.JS yeoman game generator! If you have any problems, want to view tutorials, or want to just say hi, then visit us on http://www.kiwijs.org/
+Generated with the yo man kiwi kit and leapControler plugin this app allows users to control the character on the screen via the leap motion connection.
+

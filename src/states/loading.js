@@ -28,6 +28,14 @@ GettingStarted.Loading = new KiwiLoadingScreen('Loading', 'Intro', 'assets/img/l
 GettingStarted.Loading.preload = function () {
         KiwiLoadingScreen.prototype.preload.call(this);
       
-        this.addImage('hand', 'assets/img/finger.png');
-        this.addImage('finger', 'assets/img/hand.png');
+    this.addSpriteSheet('NyanCat', 'assets/img/NyanCat.png', 111, 70);
+
+
+    this.addImage('yellowBox', 'assets/img/YellowBox.png');
+    this.addImage('blueBox', 'assets/img/BlueBox.png');
+    this.addImage('orangeBox', 'assets/img/OrangeBox.png');
+    this.addImage('greenBox', 'assets/img/GreenBox.png');
+    this.addImage('redBox', 'assets/img/RedBox.png');
+    this.addImage('pauseImage', 'assets/img/pauseImage.png');
+
 };

@@ -1,10 +1,10 @@
-var FlappyNyan = function(state, x, y){
+var Nyan = function(state, x, y){
     Kiwi.GameObjects.Sprite.call(this, state, state.textures['NyanCat'], x, y);
     this.state = state;
     this.animation.add('walk', [0, 1, 2, 3, 4, 5], 0.1, true);    
     this.animation.play('walk');
 
-    FlappyNyan.prototype.update = function(){
+    Nyan.prototype.update = function(){
         Kiwi.GameObjects.Sprite.prototype.update.call(this);
         this.spawnBoxes(this.state.control.hands[0].pointables[0].active, 
             this.state.control.hands[0].pointables[1].active, 
@@ -13,7 +13,7 @@ var FlappyNyan = function(state, x, y){
             this.state.control.hands[0].pointables[4].active);
     }
 
-    FlappyNyan.prototype.spawnBoxes = function(one, two, three, four, five){
+    Nyan.prototype.spawnBoxes = function(one, two, three, four, five){
 
         if(one){    
         this.state.streamerGroup.addChild(new MovingBox(this.state, this.x , this.y + 05,  'redBox'));
@@ -37,4 +37,4 @@ var FlappyNyan = function(state, x, y){
 
 }
 
-Kiwi.extend(FlappyNyan,Kiwi.GameObjects.Sprite);
+Kiwi.extend(Nyan,Kiwi.GameObjects.Sprite);

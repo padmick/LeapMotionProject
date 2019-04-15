@@ -24,8 +24,8 @@ PlayState.create = function () {
 
     this.streamerGroup = new Kiwi.Group(this);
     this.addChild(this.streamerGroup);
-    this.flappyNyan = new FlappyNyan(this, 100, 100);
-    this.addChild(this.flappyNyan);
+    this.Nyan = new Nyan(this, 100, 100);
+    this.addChild(this.Nyan);
 
     this.fingersActiveCounter = new Kiwi.HUD.Widget.TextField(this.game, "Active Fingers: 0" , 10, 10);
     this.fingersActiveCounter.style.color = "#ffffff";
@@ -48,8 +48,8 @@ PlayState.create = function () {
 PlayState.update = function () {
     Kiwi.State.prototype.update.call(this);
     if(this.control.controllerConnected){
-        this.flappyNyan.x = this.control.hands[0].posX + game.stage.width * 0.5;
-        this.flappyNyan.y = -this.control.hands[0].posY + game.stage.height;
+        this.Nyan.x = this.control.hands[0].posX + game.stage.width * 0.5;
+        this.Nyan.y = -this.control.hands[0].posY + game.stage.height;
         
         
         this.updateText();

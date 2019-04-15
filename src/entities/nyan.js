@@ -6,6 +6,10 @@ var FlappyNyan = function(state, x, y){
  
     FlappyNyan.prototype.update = function(){
         Kiwi.GameObjects.Sprite.prototype.update.call(this);
+        this.spawnBoxes(this.state.control.hands[0].pointables[0].active, this.state.control.hands[0].pointables[1].active, 
+        this.state.control.hands[0].pointables[2].active, 
+        this.state.control.hands[0].pointables[3].active, 
+        this.state.control.hands[0].pointables[4].active);
     }
 }
 Kiwi.extend(FlappyNyan,Kiwi.GameObjects.Sprite);

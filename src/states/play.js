@@ -39,6 +39,11 @@ GettingStarted.Play.update = function() {
    
 	  this.fingers[i].y = -this.control.hands[0].pointables[i].tipY;
 	  this.fingers[i].y += game.stage.height;
+
+	  this.streamerGroup = new Kiwi.Group(this);
+      this.addChild(this.streamerGroup);
+      this.flappyNyan = new flappyNyan(this, 100, 100);
+      this.addChild(this.flappyNyan);
 	}; 
   };
 
